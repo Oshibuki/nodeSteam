@@ -13,6 +13,8 @@
     "url": "http://github.com/Tidwell/nodeSteam"
   },
   "dependencies": {
+    "dotenv": "^16.0.1",
+    "https-proxy-agent": "^5.0.1",
     "qs": "^6.1.0"
   },
   "engines": [
@@ -20,7 +22,6 @@
   ],
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha \"./test/**/*.spec.js\" --timeout 20000",
-
     "coverage": "node ./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha \"./test/**/*.spec.js\" -- --timeout 20000",
     "format-lib": "./node_modules/jsfmt/bin/jsfmt -w ./lib ./*.js",
     "format-spec": "./node_modules/jsfmt/bin/jsfmt -w ./test",
